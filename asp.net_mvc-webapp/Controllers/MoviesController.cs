@@ -28,8 +28,8 @@ namespace asp.net_mvc_webapp.Controllers
             };
 
             return View(viewModel);
-            //ViewData["RandomMovie"] = movie;
-            //ViewBag.RandomMovie = movie;
+            //viewdata["randommovie"] = movie;
+            //viewbag.randommovie = movie;
 
             //var viewResult = new ViewResult();
             //viewResult.ViewData.Model

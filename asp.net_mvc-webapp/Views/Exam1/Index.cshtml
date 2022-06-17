@@ -1,0 +1,23 @@
+﻿@*@model asp.net_mvc_webapp.Model*@
+@model IEnumerable<asp.net_mvc_webapp.Models.Exam1>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Customer</h2>
+
+<table class="table table-bordered table-hover">
+    <tr>
+        <td>
+            <b>Customer</b>
+        </td>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.ActionLink(@item.Name, "Details", "Exam1", new { id = 2 }, null)</td>
+        </tr>
+    }
+</table>

@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using asp.net_mvc_webapp.Models;
 using System.Data.Entity;
+using asp.net_mvc_webapp.Models;
+using asp.net_mvc_webapp.ViewModels;
 
 namespace asp.net_mvc_webapp.Controllers
 {

@@ -209,10 +209,15 @@
     <Compile Include="Migrations\202206181449385_AddBirthdateSQL.designer.cs">
       <DependentUpon>202206181449385_AddBirthdateSQL.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202206181541200_AddMovie.cs" />
+    <Compile Include="Migrations\202206181541200_AddMovie.designer.cs">
+      <DependentUpon>202206181541200_AddMovie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Exam1.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
@@ -285,6 +290,7 @@
     <Content Include="Views\Exam1\Details.cshtml" />
     <Content Include="Views\Customer\Index.cshtml" />
     <Content Include="Views\Customer\Details.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -326,6 +332,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202206181449385_AddBirthdateSQL.resx">
       <DependentUpon>202206181449385_AddBirthdateSQL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202206181541200_AddMovie.resx">
+      <DependentUpon>202206181541200_AddMovie.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

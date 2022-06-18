@@ -13,7 +13,7 @@ namespace asp.net_mvc_webapp.Controllers
         public ActionResult Index()
         {
             var model = new List<Exam1>();
-
+            
             model.Add(new Exam1 { Name = "John Smith" });
             model.Add(new Exam1 { Name = "Mary Williams" });
             
@@ -22,7 +22,9 @@ namespace asp.net_mvc_webapp.Controllers
 
         public ActionResult Details(int id)
         {
-            return Content("id=" + id);
+            //passing data controller to view
+            ViewBag.Message = id;
+            return View();
         }        
     }
 }

@@ -20,6 +20,16 @@ namespace asp.net_mvc_webapp.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        /*
+            Migration cmd
+                - enable-migrations
+                - add-migration InintialModel
+                - add-migration InintialModel -force
+                - update-database (click show all file)
+                
+         */
+        public DbSet<Customer> Customers { get; set; }
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

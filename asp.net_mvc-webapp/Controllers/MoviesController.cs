@@ -25,6 +25,26 @@ namespace asp.net_mvc_webapp.Controllers
             _context.Dispose();
         }
         
+        public ActionResult New()
+        {
+            var membershipType = _context.MembershipTypes.ToList();
+            var viewModel = new CustomerFormViewModel
+            {
+                MembershipTypes = membershipType
+            };
+            return View(viewModel);
+        }
+
+        [HttpPost]
+        //public ActionResult Create(NewCustomerViewModel viewModel)
+        public ActionResult Create(Customer customer)
+        {
+            //Saving data
+            _context.Customers.Add(customer);
+            _context.SaveChanges();
+            return RedirectToAction("Index", "Customer");
+        }
+
         public ViewResult Index()
         {
             //var movies = GetMovies();

@@ -33,8 +33,9 @@ namespace asp.net_mvc_webapp.Controllers
             /*
              Include(c => c.MembershipType) join table
              */
-            var customers = _context.Customers.Include(c => c.MembershipType).ToList();
-            return View(customers);
+            //var customers = _context.Customers.Include(c => c.MembershipType).ToList();
+            //return View(customers);
+            return View();
         }
 
         public ActionResult Details(int id)
